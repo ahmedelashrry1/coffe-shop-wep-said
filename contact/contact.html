@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galal Coffee</title>
+    <link rel="icon" href="../img/logo.jpeg">
+    <link rel="stylesheet" href="../MainStyle/style.css">
+    <link rel="stylesheet" href="../MainStyle/normalize.css">
+    <link rel="stylesheet" href="ContactStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="Form.js" defer></script>
+<body>
+    <span class="up"><i class="fa-sharp fa-solid fa-chevron-up"></i></span>
+    <!-- start nav bar -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="../home/home.html"><label class="logo">GALAL COFFEE</label></a>
+        <ul>
+            <li><a href="../home/home.html" >Home</a></li>
+            <li><a href="../about/about.html">About</a></li>
+            <li><a href="../menu/menu.html">Menu</a></li>
+            <li><a href="../offers/offers.html">Offers</a></li>
+            <li><a href="../contact/contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- end nav bar -->
+    <!-- start contact -->
+    <div class="title">
+        <h2>Contact Us</h2>
+    </div>
+    <div class="temp">
+        <div class="box">
+            <!-- startt form -->
+            <div class="contact form">
+                <h3>Send a Massage</h3>
+                <form id="contactForm">
+                    <div class="formBox">
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>First Name</span>
+                                <input type="text" placeholder="first name" id="firstName">
+                            </div>
+                            <div class="inputBox">
+                                <span>Last Name</span>
+                                <input type="text" placeholder="last name" id="lastName">
+                            </div>
+                        </div>
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>Email</span>
+                                <input type="text" placeholder="example@gmail.com" id="email">
+                            </div>
+                            <div class="inputBox">
+                                <span>Mobile</span>
+                                <input type="text" placeholder="+20 0106 667 2019" id="phone">
+                            </div>
+                        </div>
+                        <div class="row100">
+                            <div class="inputBox">
+                                <span>Massage</span>
+                                <textarea placeholder="Write your massage here..." id="message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row100">
+                            <div class="inputBox">
+                                <input type="submit" value="send">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- end form -->
+            <!-- start info -->
+            <div class="contact info">
+                <h3>Contact Info</h3>
+                <div class="infoBox">
+                    <div>
+                        <span><ion-icon name="location"></ion-icon></span>
+                        <p>East Neighborhood, Portsaid<br>EGYPT</p>
+                    </div>
+                    <div>
+                        <span><ion-icon name="mail"></ion-icon></span>
+                        <a href="#">example@gmail.com</a>
+                    </div>
+                    <div>
+                        <span><ion-icon name="call"></ion-icon></span>
+                        <a href="#">+20 0155 618 2211</a>
+                    </div>
+                    <!-- social media Links -->
+                    <ul class="social-contant">
+                        <li><a href="https://www.facebook.com/Galalcoffee1"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="https://www.instagram.com/galal_coffee/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end info -->
+            <!-- start map -->
+            <div class="contact map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497.27141460243024!2d32.31345856921931!3d31.2688187364885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f99d955dc1b79b%3A0x7077a9649c5c25c7!2z2KzZhNin2YQg2YPYp9mB2YrZhw!5e0!3m2!1sar!2seg!4v1671521154985!5m2!1sar!2seg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- end map -->
+        </div>
+    </div>
+    <!-- end contact -->
+    <!-- start footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>Galal coffee</h3>
+            <p>We hope you will visit us soon and have a nice time</p>
+            <p class="follow">Follow us</p>
+            <ul class="social">
+                <li><a href="https://www.facebook.com/Galalcoffee1"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/galal_coffee/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy; 2022. designed by <span>web team</span></p>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- script file -->
+    <script src="../MainJs/jquery.js"></script>
+    <script src="../MainJs/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

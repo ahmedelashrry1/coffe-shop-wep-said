@@ -1,0 +1,246 @@
+/* start global */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/background-home.jpg);
+    background-repeat: round;
+    background-attachment: fixed;
+    margin: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-track{
+    background: #EEE;
+}
+::-webkit-scrollbar-thumb{
+    background: #74402ad3;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #74402a;
+}
+.container{
+    width: 1200px ;
+    margin: auto;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.up{
+    position: fixed;
+    background: #74402ad3;
+    right: 10px;
+    bottom: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+    border-radius:4px;
+    cursor: pointer;
+    transition: 0.2s;
+    display: none;
+}
+.up:hover{
+    background: #74402a;
+}
+.up.show{
+    display: block;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    height: 700px;
+    width: 100%;
+}
+
+.title h2{
+    color: white;
+    font-weight: bold;
+    margin: auto;
+}
+
+/* end global */
+/* start navbar */
+nav{
+    background: transparent;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    cursor: pointer;
+}
+nav ul{
+    float:  right;
+    margin-right:20px ;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size:17px ;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+nav ul li a.active,nav ul li a:hover{
+    background: #74402a;
+    transition: 0.5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white ; 
+    float: right;
+    line-height: 80px;
+    margin-right: 40px ;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media(max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media(max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #161b22;
+        top: 80px ; 
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0; 
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav ul li a:hover,nav ul li a.active{
+        background: none;
+        color: #74402a;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+/* end navbar */
+/* start footer */
+footer{
+    /* position:relative; */
+    margin-top: 1px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:#0d1117 ;
+    height: auto;
+    font-family: "open sans";
+    padding-top: 40px;
+    color: #EEE;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    color: #14864f;
+    font-size: 50px; 
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 50px;
+    margin: 0;
+}
+.footer-content p{
+    max-width: 1000px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 30px;
+}
+.footer-content .follow{
+    font-size: 20px;
+    color : #74402a ; 
+    text-decoration:underline;
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0 2rem 0;
+}
+.social li{
+    margin: 0 20px;
+}
+.social a{
+    text-decoration: none;
+    color: #EEEE;
+}
+.social a i{
+    font-size: 30px;
+}
+.social a:hover {
+    color: #74402a;
+}
+
+.footer-bottom{
+    background: #161b22;
+    width: 100% ; 
+    padding: 10px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-weight: 200;
+}
+/* end footer */
+/* start my framework */
+.clearfix{
+    clear: both;
+}
+/* end framework */
